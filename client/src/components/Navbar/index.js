@@ -4,14 +4,6 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
-      {/* <img
-        src="../fishbowl_logo.png"
-        width="100px"
-        height="100px"
-        className="d-inline-block align-top"
-        alt="logo"
-      /> */}
-
       <button
         className="navbar-toggler"
         type="button"
@@ -38,6 +30,18 @@ function Navbar() {
               Home <span> | </span>
             </Link>
           </li>
+          <li className="nav-item howToPlay">
+            <Link
+              to="/HowToPlay"
+              className={
+                window.location.pathname === "/HowToPlay"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              How To Play <span> | </span>
+            </Link>
+          </li>
           <li className="nav-item rules">
             <Link
               to="/Rules"
@@ -48,18 +52,6 @@ function Navbar() {
               }
             >
               Rules <span> | </span>
-            </Link>
-          </li>
-          <li className="nav-item howToPlay">
-            <Link
-              to="/HowToPlay"
-              className={
-                window.location.pathname === "/HowToPlay"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              HowToPlay <span> | </span>
             </Link>
           </li>
         </ul>

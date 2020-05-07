@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Rules from "./pages/Rules";
 import HowToPlay from "./pages/HowToPlay";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,10 +23,7 @@ function App() {
           <Rules />
         </Route>
       </Switch>
-      {/* <header className="App-header"> */}
-      {/* <img src="./fishbowl_logo.png" className="App-logo" alt="logo" /> */}
-      {/* </header> */}
-      {/* </div> */}
+      <Footer />
     </Router>
   );
 }
