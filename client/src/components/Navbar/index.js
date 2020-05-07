@@ -50,16 +50,16 @@ function Navbar() {
               Rules <span> | </span>
             </Link>
           </li>
-          <li className="nav-item about">
+          <li className="nav-item howToPlay">
             <Link
-              to="/About"
+              to="/HowToPlay"
               className={
-                window.location.pathname === "/About"
+                window.location.pathname === "/HowToPlay"
                   ? "nav-link active"
                   : "nav-link"
               }
             >
-              About <span> | </span>
+              HowToPlay <span> | </span>
             </Link>
           </li>
         </ul>
